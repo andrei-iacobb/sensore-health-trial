@@ -1,0 +1,34 @@
+#from github.com/Thomas-Kenner/GrapheneTrace
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: graphenetrace_postgres
+    environment:
+      POSTGRES_DB: graphenetrace
+      POSTGRES_USER: graphene_user
+      POSTGRES_PASSWORD: graphene_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U graphene_user -d graphenetrace"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+  
+  pgadmin:
+    image: dpage/pgadmin4:8
+    environment:
+      PGADMIN_DEFAULT_EMAIL: andrei@iacob.uk
+      PGADMIN_DEFAULT_PASSWORD: andrei
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

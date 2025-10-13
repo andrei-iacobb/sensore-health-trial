@@ -1,0 +1,161 @@
+@page "/auth"
+@page "/auth/login"
+@page "/auth/signup"
+
+<div class="auth-container">
+    <div class="auth-card">
+        <h1 class="title">Sensore GrapheneTrace</h1>
+        <h2 class="subtitle">@(isSignUp ? "Create an account" : "Sign in to continue")</h2>
+
+        <div class="form-group">
+            <label>Account Type</label>
+            <select @bind="accountType" class="form-control">
+                <option value="">Select account type</option>
+                <option value="Patient">Patient</option>
+                <option value="Clinician">Clinician</option>
+                <option value="Admin">Admin</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" 
+                   @bind="email" 
+                   class="form-control" 
+                   placeholder="Enter your email" />
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" 
+                   @bind="password" 
+                   class="form-control" 
+                   placeholder="Enter your password" />
+        </div>
+
+        @if (isSignUp)
+        {
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" 
+                       @bind="confirmPassword" 
+                       class="form-control" 
+                       placeholder="Confirm your password" />
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="error-message">@errorMessage</div>
+        }
+
+        <button @onclick="HandleSubmit" class="btn-signin">
+            @(isSignUp ? "Sign Up" : "Sign In")
+        </button>
+
+        <div class="footer-links">
+            @if (!isSignUp)
+            {
+                <a href="#" @onclick="() => ShowForgotPassword()" @onclick:preventDefault="true">Forgot password?</a>
+            }
+            <a href="#" @onclick="ToggleMode" @onclick:preventDefault="true">
+                @(isSignUp ? "Already have an account? Sign In" : "Need an account? Sign Up")
+            </a>
+            <a href="#" class="help-link">Need help?</a>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string accountType = "";
+    private string email = "";
+    private string password = "";
+    private string confirmPassword = "";
+    private string errorMessage = "";
+    private bool isSignUp = false;
+
+    protected override void OnInitialized()
+    {
+        // Check URL to determine if we're on signup
+        var uri = NavigationManager.Uri;
+        isSignUp = uri.Contains("/signup");
+    }
+
+    private void ToggleMode()
+    {
+        isSignUp = !isSignUp;
+        errorMessage = "";
+        confirmPassword = "";
+    }
+
+    private async Task HandleSubmit()
+    {
+        errorMessage = "";
+
+        // Validation
+        if (string.IsNullOrWhiteSpace(accountType))
+        {
+            errorMessage = "Please select an account type";
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(email))
+        {
+            errorMessage = "Please enter your email";
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(password))
+        {
+            errorMessage = "Please enter your password";
+            return;
+        }
+
+        if (isSignUp && password != confirmPassword)
+        {
+            errorMessage = "Passwords do not match";
+            return;
+        }
+
+        if (isSignUp)
+        {
+            await HandleSignUp();
+        }
+        else
+        {
+            await HandleSignIn();
+        }
+    }
+
+    private async Task HandleSignIn()
+    {
+        // TODO: Implement your authentication logic here
+        // Example: await AuthService.SignInAsync(email, password, accountType);
+        
+        // For now, just simulate
+        await Task.Delay(500);
+        
+        // On success, navigate to dashboard
+        // NavigationManager.NavigateTo("/dashboard");
+        
+        errorMessage = "Sign in functionality to be implemented";
+    }
+
+    private async Task HandleSignUp()
+    {
+        // TODO: Implement your registration logic here
+        // Example: await AuthService.SignUpAsync(email, password, accountType);
+        
+        await Task.Delay(500);
+        errorMessage = "Sign up functionality to be implemented";
+    }
+
+    private void ShowForgotPassword()
+    {
+        // TODO: Navigate to forgot password page or show modal
+        // NavigationManager.NavigateTo("/auth/forgot-password");
+    }
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; } = default!;
+}

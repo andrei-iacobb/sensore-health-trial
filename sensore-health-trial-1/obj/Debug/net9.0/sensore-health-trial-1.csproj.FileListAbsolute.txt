@@ -17,7 +17,6 @@
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
-/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/scopedcss/bundle/sensore-health-trial-1.styles.css
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/scopedcss/projectbundle/sensore-health-trial-1.bundle.scp.css
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/7ls5nnl6go-khy4lop6wu.gz
@@ -74,5 +73,7 @@
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/sensore-health-trial-1.pdb
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/sensore-health-trial-1.genruntimeconfig.cache
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/ref/sensore-health-trial-1.dll
-/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/un7kyavu8u-w8de5o7hhe.gz
-/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/ycfcecgdtr-w8de5o7hhe.gz
+/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/sensore-health-trial-1.sourcelink.json
+/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/scopedcss/Components/Pages/Auth.razor.rz.scp.css
+/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/un7kyavu8u-1btasjm6su.gz
+/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/ycfcecgdtr-1btasjm6su.gz
