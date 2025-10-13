@@ -4,7 +4,11 @@
 
 <div class="auth-container">
     <div class="auth-card">
-        <h1 class="title">Sensore GrapheneTrace</h1>
+
+        <div class="header-container">
+            <img src="images/sensore.png" alt="Sensore Logo" class="logo" />
+            <h1 class="title">Sensore GrapheneTrace</h1>
+        </div>
         <h2 class="subtitle">@(isSignUp ? "Create an account" : "Sign in to continue")</h2>
 
         <div class="form-group">
@@ -72,7 +76,7 @@
     private string password = "";
     private string confirmPassword = "";
     private string errorMessage = "";
-    private bool isSignUp = false;
+    private bool isSignUp = true;
 
     protected override void OnInitialized()
     {

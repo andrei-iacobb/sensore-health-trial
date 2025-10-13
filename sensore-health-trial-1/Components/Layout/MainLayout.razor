@@ -3,7 +3,7 @@
 
 <div class="page">
     <main>
-        @if (!IsAuthPage)
+        @if (!IsLoginPage)
         {
             <div class="top-row px-4">
                 <a>Version 0.1.1</a>
@@ -23,5 +23,5 @@
 </div>
 
 @code {
-    private bool IsAuthPage => NavigationManager.Uri.Contains("/auth");
+    private bool IsLoginPage => NavigationManager.Uri.Contains("/auth");
 }

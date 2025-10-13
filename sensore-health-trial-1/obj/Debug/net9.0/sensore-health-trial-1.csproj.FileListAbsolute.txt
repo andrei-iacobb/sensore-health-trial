@@ -75,5 +75,5 @@
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/ref/sensore-health-trial-1.dll
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/sensore-health-trial-1.sourcelink.json
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/scopedcss/Components/Pages/Auth.razor.rz.scp.css
-/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/un7kyavu8u-1btasjm6su.gz
-/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/ycfcecgdtr-1btasjm6su.gz
+/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/un7kyavu8u-p1er8m3z3x.gz
+/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/ycfcecgdtr-p1er8m3z3x.gz
