@@ -1,5 +1,7 @@
 ﻿@inherits LayoutComponentBase
 @inject NavigationManager NavigationManager
+@using sensore_health_trial_1.Services
+@inject AuthenticationService AuthService
 
 <div class="page">
     <main>
@@ -7,6 +9,11 @@
         {
             <div class="top-row px-4">
                 <a>Version 0.1.1</a>
+                @if (AuthService.IsAuthenticated())
+                {
+                    <span style="margin: 0 15px;">@AuthService.GetCurrentUserEmail()</span>
+                    <button @onclick="HandleSignOut" style="cursor: pointer;">Sign Out</button>
+                }
             </div>
         }
 
@@ -24,4 +31,10 @@
 
 @code {
     private bool IsLoginPage => NavigationManager.Uri.Contains("/auth");
+
+    private async Task HandleSignOut()
+    {
+        await AuthService.SignOutAsync();
+        NavigationManager.NavigateTo("/auth", forceLoad: true);
+    }
 }

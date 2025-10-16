@@ -24,6 +24,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/Components/AuthenticationGate.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BdXRoZW50aWNhdGlvbkdhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

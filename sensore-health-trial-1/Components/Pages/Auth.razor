@@ -70,6 +70,9 @@
     </div>
 </div>
 
+@using sensore_health_trial_1.Services
+@inject AuthenticationService AuthService
+
 @code {
     private string accountType = "";
     private string email = "";
@@ -133,25 +136,32 @@
 
     private async Task HandleSignIn()
     {
-        // TODO: Implement your authentication logic here
-        // Example: await AuthService.SignInAsync(email, password, accountType);
-        
-        // For now, just simulate
-        await Task.Delay(500);
-        
-        // On success, navigate to dashboard
-        // NavigationManager.NavigateTo("/dashboard");
-        
-        errorMessage = "Sign in functionality to be implemented";
+        var result = await AuthService.SignInAsync(email, password, accountType);
+
+        if (result.Success)
+        {
+            // Successfully signed in, navigate to home
+            NavigationManager.NavigateTo("/", forceLoad: true);
+        }
+        else
+        {
+            errorMessage = result.ErrorMessage;
+        }
     }
 
     private async Task HandleSignUp()
     {
-        // TODO: Implement your registration logic here
-        // Example: await AuthService.SignUpAsync(email, password, accountType);
-        
-        await Task.Delay(500);
-        errorMessage = "Sign up functionality to be implemented";
+        var result = await AuthService.SignUpAsync(email, password, accountType);
+
+        if (result.Success)
+        {
+            // Account created, now sign in
+            await HandleSignIn();
+        }
+        else
+        {
+            errorMessage = result.ErrorMessage;
+        }
     }
 
     private void ShowForgotPassword()

@@ -1,0 +1,45 @@
+@using sensore_health_trial_1.Services
+@inject AuthenticationService AuthService
+@inject NavigationManager NavigationManager
+
+@if (isChecking)
+{
+    <div>Loading...</div>
+}
+else if (isAuthenticated)
+{
+    @ChildContent
+}
+
+@code {
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    private bool isAuthenticated = false;
+    private bool isChecking = true;
+
+    protected override void OnInitialized()
+    {
+        // Check if current route is the auth page
+        var currentUri = NavigationManager.Uri;
+        var isAuthPage = currentUri.Contains("/auth");
+
+        if (isAuthPage)
+        {
+            // Allow access to auth page without authentication
+            isAuthenticated = true;
+            isChecking = false;
+            return;
+        }
+
+        // Check authentication status
+        isAuthenticated = AuthService.IsAuthenticated();
+        isChecking = false;
+
+        if (!isAuthenticated)
+        {
+            // Redirect to auth page if not authenticated
+            NavigationManager.NavigateTo("/auth", forceLoad: true);
+        }
+    }
+}

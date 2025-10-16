@@ -1,0 +1,27 @@
+@page "/"
+@using sensore_health_trial_1.Services
+@inject AuthenticationService AuthService
+
+<PageTitle>Home - Sensore GrapheneTrace</PageTitle>
+
+<div style="padding: 20px;">
+    <h1>Welcome to Sensore GrapheneTrace</h1>
+
+    @if (AuthService.IsAuthenticated())
+    {
+        <div style="margin-top: 20px;">
+            <p>Hello, <strong>@AuthService.GetCurrentUserEmail()</strong>!</p>
+            <p>Account Type: <strong>@AuthService.GetCurrentUserAccountType()</strong></p>
+
+            <div style="margin-top: 30px;">
+                <h2>Getting Started</h2>
+                <p>You are now signed in to the Sensore GrapheneTrace application.</p>
+                <p>This is your dashboard where you can access all the features based on your account type.</p>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>Loading...</p>
+    }
+</div>
