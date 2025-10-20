@@ -251,15 +251,25 @@ select.form-control[b-9vcbd92wka] {
     gap: 16px;
 }
 
-.footer-links a[b-9vcbd92wka] {
+.footer-links a[b-9vcbd92wka],
+.footer-links .link-button[b-9vcbd92wka] {
     color: #666;
     text-decoration: none;
     font-size: 1rem;
 }
 
-.footer-links a:hover[b-9vcbd92wka] {
+.footer-links a:hover[b-9vcbd92wka],
+.footer-links .link-button:hover[b-9vcbd92wka] {
     color: #000;
     text-decoration: underline;
+}
+
+.link-button[b-9vcbd92wka] {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .error-message[b-9vcbd92wka] {

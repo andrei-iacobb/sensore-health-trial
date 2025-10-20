@@ -1,0 +1,12 @@
+@page "/dashboard/admin"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "admin")]
+
+<div class="dashboard-container">
+    <h1>Admin Dashboard</h1>
+    <p>Welcome to your admin dashboard</p>
+</div>
+
+@code {
+    // Admin dashboard functionality will be added here
+}

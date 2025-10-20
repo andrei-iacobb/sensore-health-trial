@@ -1,0 +1,12 @@
+@page "/dashboard/patient"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Roles = "patient")]
+
+<div class="dashboard-container">
+    <h1>Patient Dashboard</h1>
+    <p>Welcome to your patient dashboard</p>
+</div>
+
+@code {
+    // Patient dashboard functionality will be added here
+}

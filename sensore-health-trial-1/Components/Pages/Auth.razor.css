@@ -114,15 +114,25 @@ select.form-control {
     gap: 16px;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-links .link-button {
     color: #666;
     text-decoration: none;
     font-size: 1rem;
 }
 
-.footer-links a:hover {
+.footer-links a:hover,
+.footer-links .link-button:hover {
     color: #000;
     text-decoration: underline;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .error-message {

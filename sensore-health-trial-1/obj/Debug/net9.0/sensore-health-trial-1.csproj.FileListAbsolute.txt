@@ -75,8 +75,6 @@
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/ref/sensore-health-trial-1.dll
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/sensore-health-trial-1.sourcelink.json
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/scopedcss/Components/Pages/Auth.razor.rz.scp.css
-/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/un7kyavu8u-p1er8m3z3x.gz
-/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/ycfcecgdtr-p1er8m3z3x.gz
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/bin/Debug/net9.0/BCrypt.Net-Next.dll
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -94,3 +92,5 @@
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/sensore-health-trial-1.csproj.AssemblyReference.cache
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/sensore-.2C962DBC.Up2Date
+/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/un7kyavu8u-jncr3gua4q.gz
+/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/ycfcecgdtr-jncr3gua4q.gz
