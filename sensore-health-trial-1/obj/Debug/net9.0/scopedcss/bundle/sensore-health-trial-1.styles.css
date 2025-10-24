@@ -134,6 +134,33 @@ main[b-jqv1umomwt] {
         right: 0.75rem;
         top: 0.5rem;
     }
+/* _content/sensore-health-trial-1/Components/Pages/AdminDashboard.razor.rz.scp.css */
+.header-container[b-9wlort6mov] {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 8px;
+}
+
+.logo[b-9wlort6mov] {
+    width: 80px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.title[b-9wlort6mov] {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.subtitle[b-9wlort6mov] {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 40px;
+}
 /* _content/sensore-health-trial-1/Components/Pages/Auth.razor.rz.scp.css */
 .auth-container[b-9vcbd92wka] {
     min-height: 100vh;

@@ -1,8 +1,16 @@
 @page "/"
 @using sensore_health_trial_1.Services
 @inject AuthenticationService AuthService
+@inject NavigationManager NavigationManager
 
 <PageTitle>Home - Sensore GrapheneTrace</PageTitle>
+
+@code {
+    protected override void OnInitialized()
+    {
+        NavigationManager.NavigateTo("/dashboard/admin", replace: true);
+    }
+}
 
 <div style="padding: 20px;">
     <h1>Welcome to Sensore GrapheneTrace</h1>

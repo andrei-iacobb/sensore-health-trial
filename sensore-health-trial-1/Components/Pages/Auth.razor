@@ -1,7 +1,6 @@
 @page "/auth"
 @page "/auth/login"
 @page "/auth/signup"
-@rendermode InteractiveServer
 
 <div class="auth-container">
     <div class="auth-card">
@@ -54,29 +53,25 @@
             <div class="error-message">@errorMessage</div>
         }
 
-        <button @onclick="HandleSubmit" class="btn-signin" type="button">
+        <button @onclick="HandleSubmit" class="btn-signin">
             @(isSignUp ? "Sign Up" : "Sign In")
         </button>
 
         <div class="footer-links">
             @if (!isSignUp)
             {
-                <button type="button" @onclick="ShowForgotPassword" class="link-button">Forgot password?</button>
+                <a href="#" @onclick="() => ShowForgotPassword()" @onclick:preventDefault="true">Forgot password?</a>
             }
-            <button type="button" @onclick="ToggleMode" class="link-button">
+            <a href="#" @onclick="ToggleMode" @onclick:preventDefault="true">
                 @(isSignUp ? "Already have an account? Sign In" : "Need an account? Sign Up")
-            </button>
+            </a>
             <a href="#" class="help-link">Need help?</a>
         </div>
     </div>
 </div>
 
-@using System
-@using Microsoft.JSInterop
 @using sensore_health_trial_1.Services
-@inject NavigationManager NavigationManager
 @inject AuthenticationService AuthService
-@inject IJSRuntime JS
 
 @code {
     private string accountType = "";
@@ -84,7 +79,7 @@
     private string password = "";
     private string confirmPassword = "";
     private string errorMessage = "";
-    private bool isSignUp = false;
+    private bool isSignUp = true;
 
     protected override void OnInitialized()
     {
@@ -95,12 +90,9 @@
 
     private void ToggleMode()
     {
-        Console.WriteLine($"ToggleMode called. Current isSignUp: {isSignUp}");
         isSignUp = !isSignUp;
         errorMessage = "";
         confirmPassword = "";
-        Console.WriteLine($"After toggle. New isSignUp: {isSignUp}");
-        StateHasChanged();
     }
 
     private async Task HandleSubmit()
@@ -148,16 +140,8 @@
 
         if (result.Success)
         {
-            // Successfully signed in, redirect using JS to ensure cookies are properly set
-            string redirectUrl = accountType.ToLower() switch
-            {
-                "patient" => "/dashboard/patient",
-                "clinician" => "/dashboard/clinician",
-                "admin" => "/dashboard/admin",
-                _ => "/"
-            };
-
-            await JS.InvokeVoidAsync("location.assign", redirectUrl);
+            // Successfully signed in, navigate to home
+            NavigationManager.NavigateTo("/", forceLoad: true);
         }
         else
         {
@@ -185,4 +169,7 @@
         // TODO: Navigate to forgot password page or show modal
         // NavigationManager.NavigateTo("/auth/forgot-password");
     }
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; } = default!;
 }

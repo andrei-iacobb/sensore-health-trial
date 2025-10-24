@@ -34,6 +34,7 @@ builder.Services.AddCascadingAuthenticationState();
 
 // Add custom services
 builder.Services.AddScoped<AuthenticationService>();
+builder.Services.AddScoped<DashboardService>();
 
 // Add HttpClient for Blazor components
 builder.Services.AddScoped(sp =>
@@ -60,8 +61,9 @@ if (!app.Environment.IsDevelopment())
     app.UseHttpsRedirection();
 }
 
-app.UseAuthentication();
-app.UseAuthorization();
+// Authentication disabled for development - skip auth entirely
+// app.UseAuthentication();
+// app.UseAuthorization();
 
 app.UseAntiforgery();
 

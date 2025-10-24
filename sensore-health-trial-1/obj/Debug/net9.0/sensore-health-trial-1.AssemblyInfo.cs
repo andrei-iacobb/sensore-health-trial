@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sensore-health-trial-1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b4a0206729b5323a9bb325a31fab8db92b6df90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a93bef02fe6c137a765eb4e46fd3b5037e5b3f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("sensore-health-trial-1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sensore-health-trial-1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

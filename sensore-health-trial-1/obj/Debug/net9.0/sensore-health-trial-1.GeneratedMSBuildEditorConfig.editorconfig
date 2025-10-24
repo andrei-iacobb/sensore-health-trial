@@ -28,10 +28,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BdXRoZW50aWNhdGlvbkdhdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/Components/Pages/AdminDashboard.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbkRhc2hib2FyZC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/Components/Pages/ClinicianDashboard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DbGluaWNpYW5EYXNoYm9hcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -55,6 +51,10 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-jqv1umomwt
+
+[/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/Components/Pages/AdminDashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbkRhc2hib2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-9wlort6mov
 
 [/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/Components/Pages/Auth.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BdXRoLnJhem9y

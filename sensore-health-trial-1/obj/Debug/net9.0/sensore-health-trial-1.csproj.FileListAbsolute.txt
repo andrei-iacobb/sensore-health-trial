@@ -19,7 +19,6 @@
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/scopedcss/bundle/sensore-health-trial-1.styles.css
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/scopedcss/projectbundle/sensore-health-trial-1.bundle.scp.css
-/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/7ls5nnl6go-khy4lop6wu.gz
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/1aw3mr8mfz-bqjiyaj88i.gz
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/6amvzesqne-c2jlpeoesf.gz
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/qscphef9wy-erw9l3u2r3.gz
@@ -92,5 +91,7 @@
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/sensore-health-trial-1.csproj.AssemblyReference.cache
 /Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/sensore-.2C962DBC.Up2Date
-/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/un7kyavu8u-jncr3gua4q.gz
-/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/ycfcecgdtr-jncr3gua4q.gz
+/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/scopedcss/Components/Pages/AdminDashboard.razor.rz.scp.css
+/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/7ls5nnl6go-8iwghydjcv.gz
+/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/un7kyavu8u-85sbnr3ix7.gz
+/Users/andreiiacob/sensore-health-trial-1/sensore-health-trial-1/obj/Debug/net9.0/compressed/ycfcecgdtr-85sbnr3ix7.gz
